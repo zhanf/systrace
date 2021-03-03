@@ -1,0 +1,5 @@
+/build
+
+#robust
+-keepclassmembers class **{ public static com.meituan.robust.ChangeQuickRedirect *; }
+
