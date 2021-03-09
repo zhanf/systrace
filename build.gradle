@@ -2,6 +2,7 @@
 buildscript {
     ext.kotlin_version = "1.3.72"
     repositories {
+        mavenLocal()
         google()
         jcenter()
     }
@@ -10,8 +11,9 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         //robust
-        classpath 'com.meituan.robust:gradle-plugin:0.4.99'
-        classpath 'com.meituan.robust:auto-patch-plugin:0.4.99'
+        classpath 'com.sincerity.robust:autopatchbase:0.1.0'
+        classpath 'com.sincerity.robust:gradle-plugin:0.1.1'
+        classpath 'com.sincerity.robust:auto-patch-plugin:0.1.2'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -19,6 +21,7 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenLocal()
         google()
         jcenter()
     }

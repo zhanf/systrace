@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.6.82
 # min_api: 16
-# pg_map_id: 58eb9ee
+# pg_map_id: f5894aa
 # common_typos_disable
 $r8$backportedMethods$utility$Integer$2$compare -> a:
     int compare(int,int) -> a
@@ -26193,7 +26193,7 @@ com.meituan.robust.PatchedClassInfo -> com.meituan.robust.PatchedClassInfo:
     11:14:void <init>(java.lang.String,java.lang.String) -> <init>
 com.meituan.robust.RobustApkHashUtils -> com.meituan.robust.RobustApkHashUtils:
     13:13:void <init>() -> <init>
-    41:54:java.lang.String readFirstLine(android.content.Context,java.lang.String) -> readFirstLine
+    41:56:java.lang.String readFirstLine(android.content.Context,java.lang.String) -> readFirstLine
     18:22:java.lang.String readRobustApkHash(android.content.Context) -> readRobustApkHash
     26:37:java.lang.String readRobustApkHashFile(android.content.Context) -> readRobustApkHashFile
 com.meituan.robust.RobustArguments -> com.meituan.robust.RobustArguments:
@@ -26313,28 +26313,28 @@ com.piaoyou.systrace.home.base.ILifecycleObserver -> d.c.a.c.a.a:
 com.piaoyou.systrace.home.view.LifecycleViewModel -> com.piaoyou.systrace.home.view.LifecycleViewModel:
     5:5:void <init>() -> <init>
 com.piaoyou.systrace.home.view.MainActivity -> com.piaoyou.systrace.home.view.MainActivity:
-    18:18:void <init>() -> <init>
-    18:18:void access$gotoConfigChangeActivity(com.piaoyou.systrace.home.view.MainActivity) -> a
-    18:18:void access$runRobust(com.piaoyou.systrace.home.view.MainActivity) -> b
-    20:28:void onCreate(android.os.Bundle) -> onCreate
-    64:66:void onDestroy() -> onDestroy
-    54:56:void onRestart() -> onRestart
-    59:61:void onStop() -> onStop
-    48:48:void gotoConfigChangeActivity() -> r
-    31:44:void runRobust() -> s
+    15:15:void <init>() -> <init>
+    15:15:void access$gotoConfigChangeActivity(com.piaoyou.systrace.home.view.MainActivity) -> a
+    15:15:void access$runRobust(com.piaoyou.systrace.home.view.MainActivity) -> b
+    17:25:void onCreate(android.os.Bundle) -> onCreate
+    62:64:void onDestroy() -> onDestroy
+    52:54:void onRestart() -> onRestart
+    57:59:void onStop() -> onStop
+    44:44:void gotoConfigChangeActivity() -> r
+    28:41:void runRobust() -> s
 com.piaoyou.systrace.home.view.MainActivity$Companion -> com.piaoyou.systrace.home.view.MainActivity$a:
-    68:68:void <init>() -> <init>
-    68:68:void <init>(kotlin.jvm.internal.DefaultConstructorMarker) -> <init>
+    66:66:void <init>() -> <init>
+    66:66:void <init>(kotlin.jvm.internal.DefaultConstructorMarker) -> <init>
 com.piaoyou.systrace.home.view.MainActivity$onCreate$1 -> com.piaoyou.systrace.home.view.MainActivity$b:
     com.piaoyou.systrace.home.view.MainActivity this$0 -> d
-    23:24:void onClick(android.view.View) -> onClick
+    20:21:void onClick(android.view.View) -> onClick
 com.piaoyou.systrace.home.view.MainActivity$onCreate$2 -> com.piaoyou.systrace.home.view.MainActivity$c:
     com.piaoyou.systrace.home.view.MainActivity this$0 -> d
-    26:27:void onClick(android.view.View) -> onClick
+    23:24:void onClick(android.view.View) -> onClick
 com.piaoyou.systrace.home.view.MainActivity$runRobust$1 -> com.piaoyou.systrace.home.view.MainActivity$d:
-    35:35:void <init>() -> <init>
-    37:38:void onGranted() -> a
-    41:42:void onDenied() -> b
+    32:32:void <init>() -> <init>
+    34:35:void onGranted() -> a
+    38:39:void onDenied() -> b
 com.piaoyou.systrace.robust.PatchManipulateImp -> d.c.a.d.a:
     25:25:void <init>() -> <init>
     65:67:void copy(java.lang.String,java.lang.String) -> a

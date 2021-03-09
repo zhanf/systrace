@@ -1,14 +1,14 @@
 plugins {
     id 'com.android.application'
     //制作补丁时将这个打开，auto-patch-plugin紧跟着com.android.application
-    id 'auto-patch-plugin'
+//    id 'auto-patch-plugin'
     id 'robust'
     id 'kotlin-android'
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     signingConfigs {
         release {
@@ -67,8 +67,9 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     //robust
-    api 'com.meituan.robust:robust:0.4.99'
+//    api 'com.meituan.robust:robust:0.4.99'
 
+    implementation project(':patch')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

@@ -1,0 +1,59 @@
+//apply plugin: 'maven-publish'
+apply plugin: 'com.android.library'
+project.archivesBaseName = 'robust'
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            consumerProguardFiles 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/maven/com.google.guava/guava/pom.properties'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.xml'
+        exclude 'META-INF/maven/commons-cli/commons-cli/pom.properties'
+        exclude 'META-INF/maven/commons-cli/commons-cli/pom.xml'
+    }
+}
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+dependencies {
+//    compile 'com.meituan.robust:autopatchbase:' + VERSION_NAME
+    api project(':autopatchbase')
+}
+
+//apply from: '../gradle_mvn_push.gradle'
+/*
+
+
+repositories {
+    mavenLocal()
+    google()
+    jcenter()
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId "com.sincerity.robust"
+            artifactId "patch"
+            version "0.1.0"
+
+            from components.java
+        }
+    }
+}
+*/

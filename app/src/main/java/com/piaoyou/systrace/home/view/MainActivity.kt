@@ -8,11 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.PermissionUtils
 import com.blankj.utilcode.util.ToastUtils
-import com.meituan.robust.patch.RobustModify
 import com.piaoyou.systrace.R
 import com.piaoyou.systrace.base.App
-import com.piaoyou.systrace.configChange.view.ConfigChangeActivity
-import com.piaoyou.systrace.utils.RouterXX
 
 
 class MainActivity : AppCompatActivity() {
@@ -43,12 +40,10 @@ class MainActivity : AppCompatActivity() {
         }).request()
     }
 
+    //    @Modify
     private fun gotoConfigChangeActivity() {
-        //throw IllegalArgumentException("")
-        RobustModify.modify()
-        RouterXX.startActivity(this, ConfigChangeActivity::class.java)
-        //如果不新增 RouterXX.startActivity(this, ConfigChangeActivity::class.java) 方法，直接调用下面注释方法，则可以生成patch.jar
-        //startActivity(Intent(this, ConfigChangeActivity::class.java))
+        throw IllegalArgumentException("")
+//        Router.startActivity(this, ConfigChangeActivity::class.java, null)
     }
 
     override fun onRestart() {
